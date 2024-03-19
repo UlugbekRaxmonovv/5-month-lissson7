@@ -7,9 +7,11 @@ function soat()
     let son = soat.getHours();
     let son1 = soat.getMinutes();
     let son2 = soat.getSeconds();
-    let javob = son + ":" + son1 + ":" + son2;
+   return  son + ":" + son1 + ":" + son2;
     document.write(javob)
+    // // console.log(javob);
 }
+soat()
 const DATA = [
 {
     li: 'salom',
@@ -44,7 +46,7 @@ function createTable (data){
   
         <li class="checked" >${user.li}</li>
        <div class="img">
-       <button onclick="soat()">Time</button>
+       <button onclick="soat()">${soat()}</button>
        <div class="img-rasm">
        <button class="bnt"  onclick="go(${index})"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg></button>
        </div>
